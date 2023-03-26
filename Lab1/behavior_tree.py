@@ -182,7 +182,7 @@ class RoombaBehaviorTree(BehaviorTree):
     Represents a behavior tree of a roomba cleaning robot.
     """
     def __init__(self):
-        select = SelectorNode("Top")
+        select = SelectorNode("TopNode")
 
         seq_move = SequenceNode("MoveNode")
         seq_move.add_child(MoveForwardNode())

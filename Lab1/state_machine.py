@@ -70,7 +70,6 @@ class MoveInSpiralState(State):
     def __init__(self):
         super().__init__("MoveInSpiral")
         self.state_time = 0
-        self.angle = 0
     
     def check_transition(self, agent, state_machine):
         if agent.get_bumper_state():
