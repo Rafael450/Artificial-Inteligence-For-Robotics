@@ -2,6 +2,7 @@ __pycache__/
 tempCodeRunnerFile.py
 *.zip
 *.png
+*.jpeg
 # *.pdf
 *.py[cod]
 *$py.class

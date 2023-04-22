@@ -18,10 +18,10 @@ class Particle:
         """
         delta = upper_bound - lower_bound
 
-        self.position = np.array([random.uniform(lower_bound[i], upper_bound[i]) for i in range(3)])
+        self.position = np.array([random.uniform(lower_bound[i], upper_bound[i]) for i in range(len(lower_bound))])
         self.best_position = self.position
         self.best_value = -inf
-        self.speed = np.array([random.uniform(-delta[i], delta[i]) for i in range(3)])
+        self.speed = np.array([random.uniform(-delta[i], delta[i]) for i in range(len(lower_bound))])
 
 
 class ParticleSwarmOptimization:
